@@ -104,6 +104,11 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5k-mk-5LD"/>
                                                 </connections>
@@ -119,6 +124,11 @@
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m57-mr-QJd"/>
                                                 </connections>
@@ -178,6 +188,7 @@
                         <outlet property="txtDescription" destination="a96-UV-NyD" id="Nav-eD-mik"/>
                         <outlet property="txtTittle" destination="LI0-bt-x1s" id="d1v-hh-XdS"/>
                         <outlet property="viewAlert" destination="e11-3M-vdL" id="pgl-B8-BNx"/>
+                        <outlet property="viewBack" destination="Jen-vk-iy4" id="wYK-nx-Uhf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

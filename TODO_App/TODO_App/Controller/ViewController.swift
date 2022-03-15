@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewAlert: UIView!
     
+    @IBOutlet weak var viewBack: UIView!
+    
+    
     @IBAction func btnSave(_ sender: Any) {
         print(txtTittle.text)
         print(txtDescription.text)
@@ -37,14 +40,22 @@ class ViewController: UIViewController {
         self.fetchData()
         
         viewAlert.isHidden = true
+        
+        txtTittle.text = ""
+        txtDescription.text = ""
     }
     @IBAction func btnCancel(_ sender: Any) {
         viewAlert.isHidden = true
+        
+        txtTittle.text = ""
+        txtDescription.text = ""
     }
     @IBOutlet weak var tblTodoItemInfo: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewAlert.layer.cornerRadius = 8
+        viewBack.layer.cornerRadius = 8
+        viewBack.layer.borderWidth = 1
+        viewBack.layer.borderColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
         fetchData()
         // Do any additional setup after loading the view.
     }
